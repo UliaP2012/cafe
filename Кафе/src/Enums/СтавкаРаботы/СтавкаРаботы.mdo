@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="27e460dd-8abd-4249-ba2e-c093d1cc9876">
+  <producedTypes>
+    <refType typeId="38b6ee94-4cfc-4c55-880f-39f1f5b8e86a" valueTypeId="2498bbbf-c2f1-484c-84e8-20fd95fca109"/>
+    <listType typeId="15f6ba5e-55c2-47fb-a1de-d9e3ff899aa3" valueTypeId="775c3c43-202d-4bf3-8847-2001fa46acd8"/>
+    <managerType typeId="cd21af68-fb7f-42c0-8d73-afbd2190d3de" valueTypeId="b7404425-d049-44ed-9c67-e4412cbfcee1"/>
+  </producedTypes>
+  <name>СтавкаРаботы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ставка работы</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="7222df74-8f07-4cc3-9250-b4028f2c94d7">
+    <name>Полная</name>
+    <synonym>
+      <key>ru</key>
+      <value>1</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="020ce306-496e-48e3-b6a1-e31f77aa20f3">
+    <name>ПолСтавки</name>
+    <synonym>
+      <key>ru</key>
+      <value>0,5</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

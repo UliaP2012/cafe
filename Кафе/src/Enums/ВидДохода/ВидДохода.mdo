@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f756587a-5ccf-4cc8-89db-efc009e043d9">
+  <producedTypes>
+    <refType typeId="b75eec9c-be07-4137-9fa8-2a33ff3822aa" valueTypeId="f5090891-397e-42f1-88fd-cde2fce8f322"/>
+    <listType typeId="58b788b5-2ba4-448d-877a-2c94ab8c0f21" valueTypeId="cb91356f-24a3-44a4-ab31-fb14bb887ee6"/>
+    <managerType typeId="ac898543-30c2-41e3-a2bb-88a4c576277a" valueTypeId="3aa91f11-83b2-4ddb-9304-4ada7e7e53dc"/>
+  </producedTypes>
+  <name>ВидДохода</name>
+  <synonym>
+    <key>ru</key>
+    <value>Вид дохода</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="283710a7-316d-4f74-9859-6cc81b0e4188">
+    <name>Зарплата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заработная плата и иные доходы с ограничением взыскания</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

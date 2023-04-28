@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b53a7330-6602-4af7-ad74-383275ab169c">
+  <producedTypes>
+    <refType typeId="a20a0b22-a27c-4ec0-b000-2ba0fbc4faf4" valueTypeId="333e602d-6aaf-47c9-b807-3f5f7253ab34"/>
+    <listType typeId="6d1cd142-5532-4377-b6cc-d26da403d6e6" valueTypeId="53003a7e-604a-449b-a2df-d9005c17000c"/>
+    <managerType typeId="7d637930-61f4-4320-8364-beacb5e6abd3" valueTypeId="283de127-faf4-413c-bb04-c022282910d8"/>
+  </producedTypes>
+  <name>ВидВыплаты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Вид выплаты</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="094c8881-0597-420f-a010-3e7230c230fa">
+    <name>Аванс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аванс</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="b6db4b37-d643-4a14-8277-6ddb3f2d86b1">
+    <name>Зарплата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Зарплата</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

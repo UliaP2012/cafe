@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="99261b36-68df-406a-a339-ce11d7f03afd">
+  <producedTypes>
+    <objectType typeId="729a8fd0-3f9c-49b2-b738-f9b41d533bd3" valueTypeId="0778b86a-de99-4094-acfc-6b52daacd39b"/>
+    <refType typeId="079f6bac-a068-42ab-bab0-a060dcbbdc6f" valueTypeId="c9b10bff-b31d-4cd3-80df-5f781ed291ce"/>
+    <selectionType typeId="8174d1cb-f872-494f-b9dd-317b269b7f36" valueTypeId="b3c18de8-7529-419c-b06d-e0de78746e94"/>
+    <listType typeId="8b1e6752-348c-4a5b-bc82-a3fcc182d55e" valueTypeId="c8a6c970-d67e-45da-b6da-a330212609be"/>
+    <managerType typeId="9a889e01-fa4d-4ee3-9b3f-51d724cbd441" valueTypeId="885bf505-6666-4440-b80c-bc30595fe702"/>
+  </producedTypes>
+  <name>Должности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Должности</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Должности.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.Должности.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <hierarchical>true</hierarchical>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.Должности.Form.ФормаЭлементаДолжности</defaultObjectForm>
+  <defaultListForm>Catalog.Должности.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="26df50ae-d245-444e-868b-d6c8614a6bd4">
+    <name>Ставка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тарифная ставка</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="c0fe671a-1812-4d39-9acc-cef6dec88ecd">
+    <name>ФормаЭлементаДолжности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента должности</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="6410bd12-16bf-45f7-bd93-e93449d60ee9">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="209c9076-56ba-4f41-9cc9-3950965cb778">
+  <name>ГрафикРаботы</name>
+  <synonym>
+    <key>ru</key>
+    <value>График работы</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Document.ТабельУчетаРабочегоВремени</content>
+  <parentSubsystem>Subsystem.УчетПерсонала</parentSubsystem>
+</mdclass:Subsystem>

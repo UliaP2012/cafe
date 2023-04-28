@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="45550d23-dbf5-4d73-9504-283869ccb312">
+  <name>Создать</name>
+  <synonym>
+    <key>ru</key>
+    <value>Создать</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.Должности</content>
+  <content>Catalog.Сотрудники</content>
+  <content>CommonPicture.ТелефоннаяТрубка</content>
+  <content>CommonPicture.Почта</content>
+  <content>CommonPicture.ОбщаяКартинка2</content>
+  <content>Catalog.Заявки</content>
+  <parentSubsystem>Subsystem.УчетПерсонала</parentSubsystem>
+</mdclass:Subsystem>

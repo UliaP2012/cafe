@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ae852c82-2f6b-481d-888f-d7ccd441a74f">
+  <producedTypes>
+    <objectType typeId="e09840c3-2915-4359-887f-a68f2dc42852" valueTypeId="7d08abfb-46b1-4649-81bd-b6b414713524"/>
+    <refType typeId="4d20d9ea-1b81-481a-8a35-fad47464a7ce" valueTypeId="03bb2ded-6fd4-4115-9dea-4cc47c1a840d"/>
+    <selectionType typeId="3cbce290-9635-4497-83de-018e76d14550" valueTypeId="36c2f5eb-65af-4515-8a9d-60993103f8a9"/>
+    <listType typeId="a111c1ac-cf5e-4c71-a75e-f2b95dd8ad2a" valueTypeId="78b2b25e-23cf-40cf-b867-5278be19f7c8"/>
+    <managerType typeId="c0d5e9b8-7104-46dc-bef9-e9e97e5ff663" valueTypeId="71769bbf-9ef0-45b2-8303-ff9b28901ea9"/>
+  </producedTypes>
+  <name>ТабельУчетаРабочегоВремени</name>
+  <synonym>
+    <key>ru</key>
+    <value>Табель учета рабочего времени</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ТабельУчетаРабочегоВремени.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ТабельУчетаРабочегоВремени.Form.ФормаДокументаТабель</defaultObjectForm>
+  <defaultListForm>Document.ТабельУчетаРабочегоВремени.Form.ФормаСпискаТабель</defaultListForm>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="5bea2fc6-94c8-4c01-ab4c-421e8259f528">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceFoldersAndItems>FoldersAndItems</choiceFoldersAndItems>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d4cd3b3f-48e6-4b7d-a8a1-80f323b516c4">
+    <name>Должность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Должность</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3a4d3b54-e20b-4b61-b7c2-a86510879114">
+    <name>День</name>
+    <synonym>
+      <key>ru</key>
+      <value>1</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="3dc8262d-095f-4b8d-b3f2-2b5ef2253e93">
+    <name>ФормаДокументаТабель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа табель</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="51491943-87c9-411a-8b14-ea1b5caaa229">
+    <name>ФормаСпискаТабель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка табель</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="dc8bfeb5-b706-42d3-96f2-6f649e1cba48">
+    <producedTypes>
+      <objectType typeId="2ebd6114-a3d1-43df-bc07-380e315e7d02" valueTypeId="dab07e98-31e4-4120-9191-cd64715502df"/>
+      <rowType typeId="769c1f41-455b-45a1-9bc3-7633f3f199fd" valueTypeId="671ac16f-7cc9-4dbf-8cb5-2f4a84836a52"/>
+    </producedTypes>
+    <name>Табель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Табель</value>
+    </synonym>
+    <attributes uuid="ba44bbbf-84c3-47c3-a05e-3ae56aeb9a9e">
+      <name>ФИО</name>
+      <synonym>
+        <key>ru</key>
+        <value>ФИО</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Сотрудники</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="85f698c4-d55d-458d-9d4d-21289e2aff90">
+      <name>Должность</name>
+      <synonym>
+        <key>ru</key>
+        <value>Должность</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="877473c7-9ea1-481f-af60-52bcae697bb1">
+      <name>Ставка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Ставка</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="64e2133e-ca61-4031-a8be-34a1e2702f98">
+      <name>День</name>
+      <synonym>
+        <key>ru</key>
+        <value>1</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="dcfcd507-36f2-4451-a965-69de312279f4">
+      <name>День1</name>
+      <synonym>
+        <key>ru</key>
+        <value>2</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="8120b7a6-d829-47c5-ade4-eab7867be73d">
+      <name>День2</name>
+      <synonym>
+        <key>ru</key>
+        <value>3</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="2f4f2408-01b0-44b4-9abd-fd032b0e3d0f">
+      <name>День3</name>
+      <synonym>
+        <key>ru</key>
+        <value>4</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="638d9650-4a3d-46f4-9055-2bc08807b996">
+      <name>День4</name>
+      <synonym>
+        <key>ru</key>
+        <value>5</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="a76be2d3-ab26-4e48-a127-65c23a1444e4">
+      <name>День5</name>
+      <synonym>
+        <key>ru</key>
+        <value>6</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="b3078bc4-067e-48b4-a4a3-bece58ea188c">
+      <name>День6</name>
+      <synonym>
+        <key>ru</key>
+        <value>7</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="6030faa0-b769-4c41-86aa-f6e05bb99fb9">
+      <name>День7</name>
+      <synonym>
+        <key>ru</key>
+        <value>8</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="e0fa29a4-6d13-443d-9eed-4c2451c2e5ec">
+      <name>День8</name>
+      <synonym>
+        <key>ru</key>
+        <value>9</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="503a26b7-523f-4b7a-be9d-cd223a110872">
+      <name>День9</name>
+      <synonym>
+        <key>ru</key>
+        <value>10</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="43465204-c032-4ade-8851-f0293e21e2c8">
+      <name>День10</name>
+      <synonym>
+        <key>ru</key>
+        <value>11</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="1cbc602e-83bd-4e6d-a245-c7df3738f704">
+      <name>День11</name>
+      <synonym>
+        <key>ru</key>
+        <value>12</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="39e641a1-7da6-41c8-869b-0f830d414acb">
+      <name>День12</name>
+      <synonym>
+        <key>ru</key>
+        <value>13</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="461d9249-0466-4966-82af-4f11cc2322ee">
+      <name>День13</name>
+      <synonym>
+        <key>ru</key>
+        <value>14</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="f49dba27-b0f2-4359-a5c4-4feef7bf533c">
+      <name>День14</name>
+      <synonym>
+        <key>ru</key>
+        <value>15</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="0e16a5f4-a504-458b-ad37-5b7d8fde0781">
+      <name>День15</name>
+      <synonym>
+        <key>ru</key>
+        <value>16</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="a5edd423-af59-45ad-b827-3cd188d024c4">
+      <name>День16</name>
+      <synonym>
+        <key>ru</key>
+        <value>17</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="122983c3-d7b6-4970-8205-ba039a1df5c2">
+      <name>ИтогоПолмесяца</name>
+      <synonym>
+        <key>ru</key>
+        <value>Итого</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="4277083a-5c28-4741-a9e6-4853aa06e751">
+      <name>День17</name>
+      <synonym>
+        <key>ru</key>
+        <value>18</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="17761ab8-bbf4-405e-89ab-c917da15605b">
+      <name>День18</name>
+      <synonym>
+        <key>ru</key>
+        <value>19</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="11c5f93f-6766-4919-a31f-e6c51bc0697c">
+      <name>День19</name>
+      <synonym>
+        <key>ru</key>
+        <value>20</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="962733e1-143f-41ad-a683-37464920d71c">
+      <name>День20</name>
+      <synonym>
+        <key>ru</key>
+        <value>21</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d3c4690e-c91e-408c-a262-3d01ae103eaa">
+      <name>День21</name>
+      <synonym>
+        <key>ru</key>
+        <value>22</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="9f545dcf-e0f7-419a-9330-b91c56f16814">
+      <name>День22</name>
+      <synonym>
+        <key>ru</key>
+        <value>23</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="65240a3b-d5c4-4d52-8033-b2a06cd8eb9c">
+      <name>День23</name>
+      <synonym>
+        <key>ru</key>
+        <value>24</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="c02617e0-a44f-42e0-9a7f-1df73e72628e">
+      <name>День24</name>
+      <synonym>
+        <key>ru</key>
+        <value>25</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="96c3ef37-98b7-4ab2-81b7-50df86099bc3">
+      <name>День25</name>
+      <synonym>
+        <key>ru</key>
+        <value>26</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="a576d26d-bd53-402f-9d05-285bbc1d40c7">
+      <name>День26</name>
+      <synonym>
+        <key>ru</key>
+        <value>27</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="7f96cca2-309a-43fc-93b0-97dcfd5e2af5">
+      <name>День27</name>
+      <synonym>
+        <key>ru</key>
+        <value>28</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="82eb3271-2b99-41e0-a59a-9d062cd255f0">
+      <name>День28</name>
+      <synonym>
+        <key>ru</key>
+        <value>29</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="48e4f634-8a2b-43d5-9fcd-d1d59ce91d43">
+      <name>День29</name>
+      <synonym>
+        <key>ru</key>
+        <value>30</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="6a8f1e62-038d-4a53-8193-722d9fab74ee">
+      <name>День30</name>
+      <synonym>
+        <key>ru</key>
+        <value>31</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="ccb17387-56b4-4ae7-a7e4-2fd0a4e8bf39">
+      <name>ИтогоВтораяПоловина</name>
+      <synonym>
+        <key>ru</key>
+        <value>Итого</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <templates uuid="95693360-d8dc-4c0f-8b03-e0b88634faaf">
+    <name>ПечатьТабеля</name>
+  </templates>
+  <commands uuid="3a598a98-590f-435d-9a79-57a59e0c6046">
+    <name>ПечатьТабеля</name>
+    <group>FormCommandBarImportant</group>
+    <commandParameterType>
+      <types>DocumentRef.ТабельУчетаРабочегоВремени</types>
+    </commandParameterType>
+    <parameterUseMode>Multiple</parameterUseMode>
+    <representation>Picture</representation>
+    <toolTip>
+      <key>ru</key>
+      <value>Распечатать табель учета рабочего времени</value>
+    </toolTip>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.PrintImmediately</picture>
+    </picture>
+  </commands>
+</mdclass:Document>
